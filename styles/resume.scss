@@ -1,0 +1,370 @@
+$light-blue: #80dfff;
+$light-green: #66ffb3;
+$light-yellow: #ffff66;
+$light-pink: #ff80b3;
+$light-purple: #b366ff;
+$white: #fff;
+$black: #000;
+
+*{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 24px;
+    font-family: "Rajdhani";
+}
+
+h3, h4, h5, h6{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3, h4{
+    font-size: 18px;
+}
+
+h5, h6{
+    font-size: 16px;
+}
+
+h4{
+    text-decoration-line: underline;
+    text-decoration-color: $light-blue;
+    text-decoration-thickness: 3px;
+}
+
+a{
+    color: $white;
+}
+
+a:link, 
+a:visited, 
+a:link:active, 
+a:visited:active{
+    color: $light-blue;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    color: $white;
+    font-family: "Inter";
+    margin: 0;
+    padding: 50px 400px 50px 400px;
+}
+
+.highlight{
+    color: $light-blue;
+}
+
+#title-div{
+    p{
+        text-align: justify;
+    }
+    
+    div{
+        display: inline-block;
+    }
+
+    div:first-child{
+        width:20%;
+    }
+
+    div:last-child{
+        box-sizing: border-box;
+        padding-left: 20px;
+        width: 80%;
+    }
+
+    #deans-photo{
+        border: 3px solid $light-blue;
+        border-radius: 100%;
+        height: 200px;
+    }
+}
+
+#contact-info{
+    clear: both;
+    width: 100%;
+    div {
+        display: inline-block;
+    }
+
+    div:first-child{
+        width: 50%;
+    }
+
+    ul{
+       list-style-type: none;
+       padding: 0;
+
+       li{
+        margin-bottom: 10px;
+       }
+    }
+}
+
+#skills{
+    ul{
+        list-style-type: none;
+        padding: 0;
+
+        li{
+            display: inline-block;
+            border: 2px solid $light-blue;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: $light-blue;
+            color: $black;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+#work-experience{
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .responsibilities{
+        list-style-type: circle;
+        font-size: 10px;
+        margin: 20px 0px 20px 20px;
+    }
+
+    em{
+        font-weight: normal;
+    }
+}
+
+$mobile-screen: 600px;
+$tablet-screen: 1050px;
+$tablet-horizontal: 1300px;
+$laptop-screen: 1600px;
+$desktop-screen: 1800px;
+
+@media (max-width: $desktop-screen) {
+    .highlight,
+    a:link, 
+    a:visited, 
+    a:link:active, 
+    a:visited:active{
+        color: $light-green;
+    }
+
+    h4{
+        text-decoration-color: $light-green;
+    }
+
+    #title-div{
+        #deans-photo{
+            border: 3px solid $light-green;
+            border-radius: 100%;
+        }
+    }
+
+    #skills{
+        ul{
+            li{
+                border: 2px solid $light-green;
+                background-color: $light-green;
+            }
+        }
+    }
+
+    body {
+        padding: 50px 300px 50px 300px;
+    }
+}
+
+@media (max-width: $laptop-screen) {
+    body {
+        padding: 50px 150px 50px 150px;
+    }
+}
+
+@media (max-width: $tablet-horizontal) {
+    body {
+        padding: 50px 25px 50px 25px;
+    }
+
+    .highlight,
+    a:link, 
+    a:visited, 
+    a:link:active, 
+    a:visited:active{
+        color: $light-yellow;
+    }
+
+    h4{
+        text-decoration-color: $light-yellow;
+    }
+
+    #title-div{
+        #deans-photo{
+            border: 3px solid $light-yellow;
+            border-radius: 100%;
+        }
+    }
+
+    #skills{
+        ul{
+            li{
+                border: 2px solid $light-yellow;
+                background-color: $light-yellow;
+            }
+        }
+    }
+
+    .highlight{
+        color: $light-yellow;
+    }
+}
+
+@media (max-width: $tablet-screen) {
+    body {
+        padding: 50px 10px 50px 10px;
+    }
+
+    #title-div{
+        div:first-child{
+            display: none;
+        }
+        
+
+    
+        div:last-child{
+            box-sizing: border-box;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    
+
+    .highlight,
+    a:link, 
+    a:visited, 
+    a:link:active, 
+    a:visited:active{
+        color: $light-pink;
+    }
+
+    h4{
+        text-decoration-color: $light-pink;
+    }
+
+    #title-div{
+        #deans-photo{
+            border: 3px solid $light-pink;
+            border-radius: 100%;
+        }
+    }
+
+    #skills{
+        ul{
+            li{
+                border: 2px solid $light-pink;
+                background-color: $light-pink;
+            }
+        }
+    }
+
+    .highlight{
+        color: $light-pink;
+    }
+
+    #title-div{
+        
+        div{
+            display: block;
+        }
+    
+        div:first-child{
+            display: block;
+            width:100%;
+            text-align: center;
+        }
+    
+        div:last-child{
+            box-sizing: border-box;
+            text-align: center;
+            width: 100%;
+        }
+    
+        #deans-photo{
+            border-radius: 100%;
+            height: 200px;
+        }
+      }
+
+}
+@media (max-width: $mobile-screen) {
+    .highlight,
+    a:link, 
+    a:visited, 
+    a:link:active, 
+    a:visited:active{
+        color: $light-purple;
+    }
+
+    h4{
+        text-decoration-color: $light-purple;
+    }
+
+    #title-div{
+        #deans-photo{
+            border: 3px solid $light-purple;
+            border-radius: 100%;
+        }
+    }
+
+    #skills{
+        ul{
+            li{
+                border: 2px solid $light-purple;
+                background-color: $light-purple;
+            }
+        }
+    }
+
+    .highlight{
+        color: $light-purple;
+    }
+
+  #title-div{
+    p{
+        text-align: center;
+    }
+    
+    div{
+        display: block;
+    }
+
+    div:first-child{
+        display: block;
+        width:100%;
+        text-align: center;
+    }
+
+    div:last-child{
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+    }
+
+    #deans-photo{
+        border-radius: 100%;
+        height: 200px;
+    }
+  }
+
+
+}
+
+
