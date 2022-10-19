@@ -5,6 +5,7 @@ $light-pink: #ff80b3;
 $light-purple: #b366ff;
 $white: #fff;
 $black: #000;
+$gray: #1a1a1a;
 
 *{
     font-size: 18px;
@@ -51,7 +52,8 @@ a:visited:active{
 }
 
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("images/background.jpg");
+    background: $gray;
     color: $white;
     font-family: "Inter";
     margin: 0;
