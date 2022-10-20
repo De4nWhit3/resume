@@ -52,8 +52,8 @@ a:visited:active{
 }
 
 body {
-    background-image: url("images/background.jpg");
     background: $gray;
+    background-image: url("../images/background.jpg");
     color: $white;
     font-family: "Inter";
     margin: 0;
